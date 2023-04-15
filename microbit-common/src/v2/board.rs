@@ -81,6 +81,9 @@ pub struct Board {
     /// nRF52 peripheral: GPIOTE
     pub GPIOTE: pac::GPIOTE,
 
+    /// nRF52 preipheral: PPI
+    pub PPI: pac::PPI,
+
     /// nRF52 peripheral: PWM0
     pub PWM0: pac::PWM0,
 
@@ -239,6 +242,7 @@ impl Board {
             CLOCK: p.CLOCK,
             FICR: p.FICR,
             GPIOTE: p.GPIOTE,
+            PPI: p.PPI,
             PWM0: p.PWM0,
             PWM1: p.PWM1,
             PWM2: p.PWM2,

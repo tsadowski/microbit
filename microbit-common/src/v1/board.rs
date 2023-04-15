@@ -70,6 +70,9 @@ pub struct Board {
     /// nRF51 peripheral: GPIOTE
     pub GPIOTE: pac::GPIOTE,
 
+    /// nRF51 preipheral: PPI
+    pub PPI: pac::PPI,
+
     /// nRF51 peripheral: RADIO
     pub RADIO: pac::RADIO,
 
@@ -183,6 +186,7 @@ impl Board {
             CLOCK: p.CLOCK,
             FICR: p.FICR,
             GPIOTE: p.GPIOTE,
+            PPI: p.PPI,
             RADIO: p.RADIO,
             RNG: p.RNG,
             RTC0: p.RTC0,
